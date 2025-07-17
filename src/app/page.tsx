@@ -1,5 +1,5 @@
 import { clinics } from "@/lib/data";
-import ClinicCard from "@/components/clinicCard";
+import ClinicCard from "@/components/ClinicCard";
 
 
 export default async function HomePage() {

@@ -1,23 +1,21 @@
-/* 1) Tailwind v4 imports */
-@import "tailwindcss/preflight";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
-/* Light mode */
+/* default light-mode custom properties */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
 
-  /* Brand palette */
+/* Custom theme variables */
+@theme {
   --color-primary: #0066cc;
   --color-secondary: #00cc66;
   --color-accent: #ff6b35;
 
-  /* Font stack */
-  --font-sans: "Inter", Arial, Helvetica, sans-serif;
+  --font-sans: "Inter", sans-serif;
 }
 
-/* Dark‑mode overrides */
+/* ark mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -25,31 +23,11 @@
   }
 }
 
-/* Base styles tying variables to html/body */
-html {
-  font-family: var(--font-sans);
-  background-color: var(--background);
+/* Base body styles */
+body {
+  background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans);
   margin: 0;
   padding: 0;
-}
-
-/* Utility shortcuts for brand colors */
-.bg-primary {
-  background-color: var(--color-primary);
-}
-.bg-secondary {
-  background-color: var(--color-secondary);
-}
-.bg-accent {
-  background-color: var(--color-accent);
-}
-.text-primary {
-  color: var(--color-primary);
-}
-.text-secondary {
-  color: var(--color-secondary);
-}
-.text-accent {
-  color: var(--color-accent);
 }
