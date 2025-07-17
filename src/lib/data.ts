@@ -40,4 +40,23 @@ export const clinics: Clinic[] = [
       { name: "Dudak Dolgusu", priceRange: "500€ - 800€" },
     ],
   },
+  {
+    id: 3,
+    name: "Medical Park",
+    category: "Ortodonti",
+    city: "İzmir",
+    district: "Konak",
+    specialties: ["Ortodonti"],
+    rating: 4.2,
+    reviewCount: 1300,
+    priceRange: "$$",
+    image: "/clinics/medical-park.jpg",
+    description: "Deneyimli cerrah kadrosu ve hasta odaklı hizmet anlayışı.",
+    accreditations: ["JCI"],
+    languages: ["Türkçe", "İngilizce"],
+    services: [
+      { name: "Yüz Germe", priceRange: "4.000€ - 7.000€" },
+      { name: "Dudak Dolgusu", priceRange: "500€ - 800€" },
+    ],
+  },
 ];
