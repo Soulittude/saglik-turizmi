@@ -10,7 +10,7 @@ export default async function HomePage() {
       {/* Hero Section */}
       <section className="bg-primary text-white py-20 px-4 text-center">
         <h1 className="text-4xl font-bold max-w-2xl mx-auto">
-          Türkiye'nin Sağlık Turizmi Klinikleri
+          Türkiye&apos;nin Sağlık Turizmi Klinikleri
         </h1>
         <p className="mt-4 text-lg max-w-xl mx-auto">
           En kaliteli tedavi hizmetleri için önde gelen kliniklere göz atın.
