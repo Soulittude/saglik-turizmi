@@ -3,7 +3,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* 2) Your custom properties for light mode */
+/* Light mode */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,7 +17,7 @@
   --font-sans: "Inter", Arial, Helvetica, sans-serif;
 }
 
-/* 3) Dark‑mode overrides */
+/* Dark‑mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -25,7 +25,7 @@
   }
 }
 
-/* 4) Base styles tying variables to html/body */
+/* Base styles tying variables to html/body */
 html {
   font-family: var(--font-sans);
   background-color: var(--background);
@@ -34,7 +34,7 @@ html {
   padding: 0;
 }
 
-/* 5) Utility shortcuts for your brand colors */
+/* Utility shortcuts for brand colors */
 .bg-primary {
   background-color: var(--color-primary);
 }
