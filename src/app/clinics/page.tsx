@@ -6,10 +6,13 @@ import ClinicCard from '@/components/ClinicCard';
 import SkeletonCard from '@/components/LoadingSkeleton';
 import SearchFilters from '@/components/SearchFilters';
 import { Clinic } from '@/types';
+import { useMessages } from '@/components/LanguageSwitcher';
+
 
 export default function ClinicsPage() {
     const [filtered, setFiltered] = useState<Clinic[]>(allClinics);
     const [loading, setLoading] = useState(true);
+    const t = useMessages();
 
     useEffect(() => {
         // simulate loading delay
@@ -20,7 +23,7 @@ export default function ClinicsPage() {
     return (
         <div className="px-4 py-8">
             <h1 className="text-3xl font-semibold text-primary mb-4 text-center">
-                Tüm Klinikler
+                {t.allClinics}
             </h1>
             <SearchFilters clinics={allClinics} onFilter={setFiltered} />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

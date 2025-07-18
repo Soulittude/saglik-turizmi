@@ -1,11 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 import { ReactNode } from 'react';
+import { useTranslation } from 'next-i18next';
+import { LanguageSwitcher, useMessages } from './LanguageSwitcher';
 
 type Props = {
     children: ReactNode;
 };
 
-export default function Layout({ children }: Props) {
+export default function Layout({ children }: { children: React.ReactNode }) {
+    const t = useMessages();
     return (
         <>
             <header className="bg-primary text-white py-4">
@@ -13,12 +18,13 @@ export default function Layout({ children }: Props) {
                     <h1 className="text-2xl font-bold">Sağlık Turizmi</h1>
                     <nav className="space-x-6">
                         <Link href="/" className="hover:underline">
-                            Ana Sayfa
+                            {t.home}
                         </Link>
                         <Link href="/clinics" className="hover:underline">
-                            Klinikler
+                            {t.clinics}
                         </Link>
                     </nav>
+                    <LanguageSwitcher />
                 </div>
             </header>
 
@@ -26,7 +32,7 @@ export default function Layout({ children }: Props) {
 
             <footer className="bg-gray-100 text-center py-4">
                 <p className="text-sm text-gray-600">
-                    &copy; {new Date().getFullYear()} Sağlık Turizmi. Tüm hakları saklıdır.
+                    {t.rights}
                 </p>
             </footer>
         </>

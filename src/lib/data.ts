@@ -5,6 +5,7 @@ export const clinics: Clinic[] = [
     id: 1,
     name: "Acıbadem Fulya Sağlık Merkezi",
     category: "Genel Hastane",
+    categoryKey: "generalHospital",
     city: "İstanbul",
     district: "Fulya",
     specialties: ["Kardiyoloji", "Nöroloji", "Ortopedi"],
@@ -24,6 +25,7 @@ export const clinics: Clinic[] = [
   {
     id: 2,
     name: "Medical Park Göztepe Hastanesi",
+    categoryKey: "eye",
     category: "Göz",
     city: "İstanbul",
     district: "Göztepe",
@@ -43,6 +45,7 @@ export const clinics: Clinic[] = [
   {
     id: 3,
     name: "Liv Hospital Ankara",
+    categoryKey: "dentistry",
     category: "Genel Hastane",
     city: "Ankara",
     district: "Çankaya",
@@ -63,6 +66,7 @@ export const clinics: Clinic[] = [
   {
     id: 4,
     name: "Ege Sağlık Hastanesi",
+    categoryKey: "hairTransplant",
     category: "Genel Hastane",
     city: "İzmir",
     district: "Bornova",
@@ -82,6 +86,7 @@ export const clinics: Clinic[] = [
   {
     id: 5,
     name: "Acıbadem Bursa Hastanesi",
+    categoryKey: "generalHospital",
     category: "Genel Hastane",
     city: "Bursa",
     district: "Nilüfer",
@@ -101,6 +106,7 @@ export const clinics: Clinic[] = [
   {
     id: 6,
     name: "Medical Park Antalya Hastanesi",
+    categoryKey: "generalHospital",
     category: "Genel Hastane",
     city: "Antalya",
     district: "Muratpaşa",

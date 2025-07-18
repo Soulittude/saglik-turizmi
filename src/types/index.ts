@@ -6,6 +6,13 @@ export interface Service {
 export interface Clinic {
   id: number;
   name: string;
+  categoryKey:
+    | "dentistry"
+    | "aesthetic"
+    | "hairTransplant"
+    | "eye"
+    | "orthopedics"
+    | "generalHospital";
   category: string;
   city: string;
   district: string;

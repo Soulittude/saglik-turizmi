@@ -38,13 +38,26 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ```
 saglik-turizmi
 ├─ eslint.config.mjs
+├─ next-i18next.config.js
 ├─ next.config.ts
 ├─ package-lock.json
 ├─ package.json
 ├─ postcss.config.mjs
 ├─ public
+│  ├─ clinics
+│  │  ├─ acibadem-bursa.jpg
+│  │  ├─ acibadem-fulya.jpg
+│  │  ├─ ege-saglik.jpg
+│  │  ├─ liv-ankara.jpg
+│  │  ├─ medical-park-antalya.jpg
+│  │  └─ medical-park-goztepe.jpg
 │  ├─ file.svg
 │  ├─ globe.svg
+│  ├─ locales
+│  │  ├─ en
+│  │  │  └─ common.json
+│  │  └─ tr
+│  │     └─ common.json
 │  ├─ next.svg
 │  ├─ vercel.svg
 │  └─ window.svg
@@ -54,13 +67,18 @@ saglik-turizmi
 │  │  ├─ clinic
 │  │  │  └─ [id]
 │  │  │     └─ page.tsx
+│  │  ├─ clinics
+│  │  │  └─ page.tsx
 │  │  ├─ favicon.ico
 │  │  ├─ globals.css
 │  │  ├─ layout.tsx
 │  │  └─ page.tsx
 │  ├─ components
+│  │  ├─ BookingModal.tsx
 │  │  ├─ ClinicCard.tsx
+│  │  ├─ LanguageSwitcher.tsx
 │  │  ├─ Layout.tsx
+│  │  ├─ LoadingSkeleton.tsx
 │  │  ├─ SearchFilters.tsx
 │  │  └─ ServiceList.tsx
 │  ├─ lib
