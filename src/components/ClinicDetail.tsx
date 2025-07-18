@@ -7,6 +7,7 @@ import ServiceList from './ServiceList';
 import BookingModal from './BookingModal';
 import BeforeAfterGallery from './BeforeAfterGallery';
 import GoogleMap from './GoogleMaps';
+import WhatsAppButton from './WhatsAppButton';
 
 interface Props {
     clinic: Clinic;
@@ -70,7 +71,7 @@ export default function ClientClinicDetail({ clinic }: Props) {
                 <BookingModal />
             </section>
 
-            {/* Before/After Görüntü Galerisi */}
+            {/* Before/After Gallery */}
             <section>
                 <h2 className="text-2xl font-semibold text-primary mb-4">
                     {t.gallery}
@@ -83,7 +84,7 @@ export default function ClientClinicDetail({ clinic }: Props) {
                 </div>
             </section>
 
-            {/* Accreditation & contact */}
+            {/* Accreditation & Contact */}
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-primary mb-4">{t.certificatesContact}</h2>
                 <div className="flex flex-wrap gap-4 mb-4">
@@ -94,7 +95,7 @@ export default function ClientClinicDetail({ clinic }: Props) {
                     ))}
                 </div>
                 <div className="space-y-2">
-                    <p>Telefon: <a href="tel:+90..." className="text-accent">+90 555 5555555</a></p>
+                    <p>Telephone: <a href="tel:+90..." className="text-accent">+90 555 5555555</a></p>
                     <p>WhatsApp: <a href="https://wa.me/..." className="text-accent">{t.sendMessage}</a></p>
                 </div>
             </section>
@@ -104,6 +105,12 @@ export default function ClientClinicDetail({ clinic }: Props) {
                 <h2 className="text-2xl font-semibold text-primary mb-4">{t.about}</h2>
                 <p className="text-gray-700 leading-relaxed">{clinic.description}</p>
             </section>
+
+            <WhatsAppButton
+                phone="905555555555"
+                message="Merhaba, klinik hakkında bilgi almak istiyorum."
+            />
         </div>
+
     );
 }
