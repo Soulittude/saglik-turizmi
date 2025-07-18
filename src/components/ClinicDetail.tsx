@@ -5,6 +5,7 @@ import { useMessages } from './LanguageSwitcher';
 import { Clinic } from '@/types';
 import ServiceList from './ServiceList';
 import BookingModal from './BookingModal';
+import BeforeAfterGallery from './BeforeAfterGallery';
 
 interface Props {
     clinic: Clinic;
@@ -59,6 +60,19 @@ export default function ClientClinicDetail({ clinic }: Props) {
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-primary mb-4">{t.booking}</h2>
                 <BookingModal />
+            </section>
+
+            {/* Before/After Görüntü Galerisi */}
+            <section>
+                <h2 className="text-2xl font-semibold text-primary mb-4">
+                    {t.gallery}
+                </h2>
+                <div className="max-w-xl mx-auto">
+                    <BeforeAfterGallery
+                        beforeImg="/placeholders/before-placeholder.jpg"
+                        afterImg="/placeholders/after-placeholder.jpg"
+                    />
+                </div>
             </section>
 
             {/* Accreditation & contact */}
