@@ -40,7 +40,7 @@ export default function SearchFilters({ clinics, onFilter }: SearchFilterProps) 
                 placeholder="Klinik adı veya şehir ara"
                 onChange={handleSearch}
                 className="border border-gray-300 rounded-lg p-2 flex-1" />
-            <select onChange={handleCategory} className="border border-gray-300 rounded-lg p-2">
+            <select onChange={handleCategory} className="border border-gray-400 bg-gray-100 rounded-lg p-2 text-gray-800 placeholder-gray-500">
                 <option value="">Tüm Kategoriler</option>
                 <option value="Diş">Diş</option>
                 <option value="Estetik">Estetik</option>
@@ -48,7 +48,7 @@ export default function SearchFilters({ clinics, onFilter }: SearchFilterProps) 
                 <option value="Göz">Göz</option>
                 <option value="Ortopedi">Ortopedi</option>
             </select>
-            <select onChange={handleCity} className="border border-gray-300 rounded-lg p-2">
+            <select onChange={handleCity} className="border border-gray-400 bg-gray-100 rounded-lg p-2 text-gray-800 placeholder-gray-500">
                 <option value="">Tüm Şehirler</option>
                 <option value="İstanbul">İstanbul</option>
                 <option value="Ankara">Ankara</option>

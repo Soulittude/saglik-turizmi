@@ -2,6 +2,7 @@ import { clinics } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import ServiceList from '@/components/ServiceList';
+import BookingModal from '@/components/BookingModal';
 
 export async function generateStaticParams() {
     return clinics.map((c) => ({
@@ -56,6 +57,12 @@ export default async function ClinicDetailPage({ params }: { params: Promise<{ i
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-primary mb-4">Hizmetler & Fiyatlar</h2>
                 <ServiceList services={clinic.services} />
+            </section>
+
+            {/*Booking*/}
+            <section className="mb-8">
+                <h2 className="text-2xl font-semibold text-primary mb-4">Randevu</h2>
+                <BookingModal />
             </section>
 
             {/* Accreditation & contact */}
