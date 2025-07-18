@@ -6,6 +6,7 @@ import { Clinic } from '@/types';
 import ServiceList from './ServiceList';
 import BookingModal from './BookingModal';
 import BeforeAfterGallery from './BeforeAfterGallery';
+import GoogleMap from './GoogleMaps';
 
 interface Props {
     clinic: Clinic;
@@ -13,6 +14,7 @@ interface Props {
 
 export default function ClientClinicDetail({ clinic }: Props) {
     const t = useMessages();
+    const address = `${clinic.name}, ${clinic.city}, ${clinic.district}`;
 
     return (
         <div className="px-4 py-8 max-w-3xl mx-auto">
@@ -38,6 +40,12 @@ export default function ClientClinicDetail({ clinic }: Props) {
                     <h2 className="font-medium text-lg mb-2">{t.location}</h2>
                     <p>{clinic.city}, {clinic.district}</p>
                 </div>
+                <section>
+                    <h2 className="text-2xl font-semibold text-primary mb-4">
+                        {t.locationMap}
+                    </h2>
+                    <GoogleMap query={address} heightClass="h-48" />
+                </section>
                 <div>
                     <h2 className="font-medium text-lg mb-2">{t.expertise}</h2>
                     <ul className="list-disc list-inside">

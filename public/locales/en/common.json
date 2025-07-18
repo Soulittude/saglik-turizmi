@@ -32,5 +32,6 @@
     "send": "Send",
     "certificatesContact": "Certificates & Contact",
     "sendMessage": "Send Message",
-    "about": "About"
+    "about": "About",
+    "locationMap": "Location Map"
 }

@@ -5,10 +5,10 @@ import { useState } from 'react';
 interface BeforeAfterGalleryProps {
     beforeImg: string;
     afterImg: string;
-    heightClass?: string; // optional Tailwind height class
+    heightClass?: string;
 }
 
-export default function BeforeAfterGallery({ beforeImg, afterImg, heightClass = 'h-56' }: BeforeAfterGalleryProps) {
+export default function BeforeAfterGallery({ beforeImg, afterImg, heightClass = 'h-128' }: BeforeAfterGalleryProps) {
     const [pos, setPos] = useState(50);
 
     return (
