@@ -44,6 +44,9 @@ saglik-turizmi
 ├─ package.json
 ├─ postcss.config.mjs
 ├─ public
+│  ├─ badges
+│  │  ├─ iso-9001.png
+│  │  └─ jci.png
 │  ├─ clinics
 │  │  ├─ acibadem-bursa.jpg
 │  │  ├─ acibadem-fulya.jpg
@@ -51,16 +54,14 @@ saglik-turizmi
 │  │  ├─ liv-ankara.jpg
 │  │  ├─ medical-park-antalya.jpg
 │  │  └─ medical-park-goztepe.jpg
-│  ├─ file.svg
-│  ├─ globe.svg
 │  ├─ locales
 │  │  ├─ en
 │  │  │  └─ common.json
 │  │  └─ tr
 │  │     └─ common.json
-│  ├─ next.svg
-│  ├─ vercel.svg
-│  └─ window.svg
+│  └─ placeholders
+│     ├─ after-placeholder.jpg
+│     └─ before-placeholder.jpg
 ├─ README.md
 ├─ src
 │  ├─ app
@@ -74,13 +75,18 @@ saglik-turizmi
 │  │  ├─ layout.tsx
 │  │  └─ page.tsx
 │  ├─ components
+│  │  ├─ BeforeAfterGallery.tsx
 │  │  ├─ BookingModal.tsx
+│  │  ├─ CertificateBadges.tsx
 │  │  ├─ ClinicCard.tsx
+│  │  ├─ ClinicDetail.tsx
+│  │  ├─ GoogleMaps.tsx
 │  │  ├─ LanguageSwitcher.tsx
 │  │  ├─ Layout.tsx
 │  │  ├─ LoadingSkeleton.tsx
 │  │  ├─ SearchFilters.tsx
-│  │  └─ ServiceList.tsx
+│  │  ├─ ServiceList.tsx
+│  │  └─ WhatsAppButton.tsx
 │  ├─ lib
 │  │  └─ data.ts
 │  └─ types
